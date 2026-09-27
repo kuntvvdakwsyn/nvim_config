@@ -1,3 +1,10 @@
+# Installing
+- Install python3
+
+``` bash
+git clone https://github.com/kuntvvdakwsyn/nvim_config/ && cd nvim_config && python3 installer.py
+```
+
 # Binds
 - space + w -> save file
 - space + q -> quit file
