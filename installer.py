@@ -15,7 +15,7 @@ while (1):
             ).strip()
     
     packages = "neovim git curl wget unzip tar gzip ripgrep fd tree-sitter-cli nodejs npm python python-pip python-pynvim base-devel luarocks ttf-jetbrains-mono-nerd wl-clipboard xclip"
-    
+    os.system("clear")
     if choice == "1":
         print(f"sudo pacman -S --noconfirm --needed {packages}")
         os.system(f"sudo pacman -S --noconfirm --needed {packages}")
