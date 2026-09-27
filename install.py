@@ -1,4 +1,5 @@
 import sys
+import subprocess
 import os
 
 print("sudo pacman -S --noconfirm --needed neovim git ripgrep nodejs npm python base-devel")
@@ -9,6 +10,8 @@ while (1):
     if answer == "y":
         os.system("mkdir ~/.config/nvim")
         os.system("mv lua init.lua lazy-lock.json ~/.config/nvim/")
+        subprocess.run(["cd",".."])
+        os.system("rm -rf nvim_config")
         os.system("neovim")
         break
     elif answer == "n":
