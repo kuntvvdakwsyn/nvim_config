@@ -2,6 +2,8 @@ import sys
 import subprocess
 import os
 
+os.system("clear")
+
 while (1):
     choice = input(
             "Select your Linux distribution:\n"
