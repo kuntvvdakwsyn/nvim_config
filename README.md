@@ -24,3 +24,8 @@ git clone https://github.com/kuntvvdakwsyn/nvim_config/ ; cd nvim_config ; pytho
 - space + ed -> close file explorer
 - space + l -> lazy menu
 
+# Plugins
+- lazy.lua:
+Manager de packete lazy
+- 
+
