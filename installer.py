@@ -4,7 +4,7 @@ import os
 
 os.system("clear")
 
-while (1):
+while True:
     choice = input(
             "Select your Linux distribution:\n"
             "1) Arch Linux (pacman)\n"
@@ -16,17 +16,18 @@ while (1):
     
     packages = "neovim git curl wget unzip tar gzip ripgrep fd tree-sitter-cli nodejs npm python python-pip python-pynvim base-devel luarocks ttf-jetbrains-mono-nerd wl-clipboard xclip"
     os.system("clear")
+    
     if choice == "1":
         print(f"sudo pacman -S --noconfirm --needed {packages}")
         os.system(f"sudo pacman -S --noconfirm --needed {packages}")
         break
     elif choice == "2":
-        print(f"sudo pacman -S --noconfirm --needed {packages}")
-        os.system(f"sudo pacman -S --noconfirm --needed {packages}")
+        print(f"sudo apt install -y {packages}")
+        os.system(f"sudo apt install -y {packages}")
         break
     elif choice == "3":
-        print(f"sudo pacman -S --noconfirm --needed {packages}")
-        os.system(f"sudo pacman -S --noconfirm --needed {packages}")
+        print(f"sudo dnf install -y {packages}")
+        os.system(f"sudo dnf install -y {packages}")
         break
     elif choice == "4":
         print(f"Install this packages: {packages}")
@@ -36,10 +37,10 @@ while (1):
 
 os.system("clear")
 
-while (1):
+while True:
     answer = input("The '~/.config/nvim' directory will be overwritten. Continue? [y/n]: ").lower().strip()
     if answer == "y":
-        os.system("mkdir ~/.config/nvim")
+        os.system("mkdir -p ~/.config/nvim")
         os.system("mv lua README.md init.lua lazy-lock.json ~/.config/nvim/")
         os.chdir("..")
         os.system("rm -rf nvim_config")
