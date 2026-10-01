@@ -44,7 +44,10 @@ while True:
         os.system("mv lua README.md init.lua lazy-lock.json ~/.config/nvim/")
         os.chdir("..")
         os.system("rm -rf nvim_config")
-        os.system("nvim")
+        os.chdir("~/.config/nvim")
+        os.system("clear")
+        os.system("nvim README.md")
+        
         break
     elif answer == "n":
         print("Bye...")
