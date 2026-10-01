@@ -4,7 +4,9 @@ Welcome to my personal Neovim setup! Built for speed, efficiency, and a minimali
 
 ## 📦 Installation
 
+``` bash
 git clone https://github.com/kuntvvdakwsyn/nvim_config/ && cd nvim_config && python3 installer.py
+```
 
 ## ⌨️ Keybindings
 
@@ -30,14 +32,14 @@ git clone https://github.com/kuntvvdakwsyn/nvim_config/ && cd nvim_config && pyt
 
 ## 🔌 Plugins
 
-- bufferline.lua: Bara de taburi superioară pentru ferestre și buffere.
-- cmp.lua: Motorul de autocompletare (autocomplete).
-- colorscheme.lua: Tema vizuală (Catppuccin).
-- cord.lua: Integrare Discord Rich Presence (arată ce editezi).
-- devicons.lua: Iconițe pentru fișiere și directoare.
-- lsp.lua: Configurația pentru Language Server Protocol (LSP).
-- mason.lua: Manager portabil pentru LSP-uri, linters și formatters.
-- nvim-autopairs.lua: Închiderea automată a parantezelor și ghilimelelor.
-- nvim-tree.lua: Navigatorul de fișiere (file tree sidebar).
-- reader-markdown.lua: Randare și previzualizare pentru fișiere Markdown.
-- telescope.lua: Căutare rapidă de fișiere, text și unelte (fuzzy finder).
+- bufferline.lua: Upper tabline bar for windows and buffers.
+- cmp.lua: Completion engine (autocomplete).
+- colorscheme.lua: Visual theme (Catppuccin).
+- cord.lua: Discord Rich Presence integration (shows what you are editing).
+- devicons.lua: File and folder icons.
+- lsp.lua: Language Server Protocol (LSP) configuration.
+- mason.lua: Portable manager for LSPs, linters, and formatters.
+- nvim-autopairs.lua: Automatic closing for brackets and quotes.
+- nvim-tree.lua: File explorer sidebar.
+- reader-markdown.lua: Markdown rendering and preview.
+- telescope.lua: Fast fuzzy finder for files, text, and tools.
